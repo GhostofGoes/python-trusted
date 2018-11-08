@@ -28,7 +28,8 @@ setup(
     license='MIT license',
     description='Bringing "trust but verify" to Python packages',
     long_description='%s\n%s' % (
-        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
+        re.compile('^.. start-badges.*^.. end-badges',
+                   re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     ),
     author='Christopher Goes',
